@@ -1,0 +1,83 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text--color: #333;
+    --primary--color: rgb(238,77,45);
+    --border--color: #dbdbdb;
+    --width-full: 1200px;
+}
+
+* {
+    box-sizing: inherit; /*cac thanh phan sau se ke thua border-box trong html*/
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* responsive */
+.grid {
+    
+    width: var(--width-full);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.grid__col-2 {
+    width: calc((var(--width-full)/12)*2);
+}
+.grid__col-4 {
+    width: calc((var(--width-full)/12)*4);
+}
+.grid__col-6 {
+    width: calc((var(--width-full)/12)*6);
+}
+
+.grid__col-10 {
+    width: calc(var(--width-full)/12*10);
+}
+
+.grid__col-1-4 {
+    width: calc(var(--width-full)/4);
+}
+
+.margin__top-bottom--12px {
+    margin: 12px 0;
+}
+/* animation */
+@keyframes notifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
